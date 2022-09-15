@@ -1,5 +1,23 @@
-# Sample Streamlit Snowpark App
+## Sample Streamlit Snowpark App
 
+### sf_cred.json
+```
+{ "secrets" :
+              {
+                "host"      : "YourAccount.snowflakecomputing.com",
+                "account"   : "<YourAccount>",
+                "user"      : "<YourUserID>",
+                "warehouse" : "<WH_NAME>",
+                "role"      : "<ROLE_NAME>",
+                "database"  : "<DB_NAME>",
+                "schema"    : "<SCHEMA_NAME>",
+                "password"  : "<PW>"
+              }
+}
+```
+
+
+### MyApp.py
 ```
 #---> STEP 1
 import numpy as np
