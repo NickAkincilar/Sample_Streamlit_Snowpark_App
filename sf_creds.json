@@ -1,0 +1,14 @@
+{ "secrets" :
+              {
+                "host"      : "YourAccount.snowflakecomputing.com",
+                "account"   : "<YourAccount>",
+                "user"      : "<YourUserID>",
+                "warehouse" : "<WH_NAME>",
+                "role"      : "<ROLE_NAME>",
+                "database"  : "<DB_NAME>",
+                "schema"    : "<SCHEMA_NAME>",
+                "password"  : "<PW>"
+              }
+}
+
+
