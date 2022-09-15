@@ -36,7 +36,7 @@ import snowflake.snowpark.functions as f
 from snowflake.snowpark import Session
 
 '## Customer Analytics'
-st.subheader('Snowflake/Snowpark Rocks!!!')
+st.subheader('Streamlit & Snowpark Rocks!!!')
 
 #---> STEP 2 (Connect to Snowflake)
 with open("/Users/nakincilar/Streamlit-VS/MyFirstApp/sf_creds.json") as c:
