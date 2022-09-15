@@ -1,5 +1,12 @@
 ## Sample Streamlit Snowpark App
 
+### Install Streamlit & Snowpark Python
+```
+pip install "snowflake-snowpark-python[pandas]"
+
+pip install streamlit
+```
+
 ### sf_cred.json
 ```
 { "secrets" :
@@ -43,9 +50,9 @@ def init_connection():
 session = init_connection()
 
 #---> STEP 3A (Define Dataframe Tables via Snowflake)
-df_Customers = session.table("DEMO_DEPLOYMENT.PUBLIC.CUSTOMERS_HQ")  # 4K Rows
+df_Customers = session.table("DEMO_DB.PUBLIC.CUSTOMERS")  # 4K Rows
 
-df_Orders = session.table("DEMO_DEPLOYMENT.PUBLIC.ORDERS_HQ")  # 207M Rows
+df_Orders = session.table("DEMO_DB.PUBLIC.ORDERS")  # 207M Rows
 
 #---> STEP 3B (Join 2 dataframes)
 df_Sales = df_Orders.join(df_Customers, df_Orders.col("CUSTOMERID") == df_Customers.col("CUSTID"))  # JOIN TABLES
