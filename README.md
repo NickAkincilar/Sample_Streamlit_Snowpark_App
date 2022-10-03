@@ -1,5 +1,10 @@
 ## Sample Streamlit Snowpark App
 
+
+![alt text](https://github.com/NickAkincilar/Sample_Streamlit_Snowpark_App/blob/main/Screen%20Shot%202022-10-03%20at%205.00.44%20PM.png?raw=true)
+
+
+
 ### Install Streamlit & Snowpark Python
 ```
 pip install "snowflake-snowpark-python[pandas]"
